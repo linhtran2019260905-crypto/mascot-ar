@@ -19,56 +19,68 @@
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;title&gt;Mascot AR&lt;/title&gt;</font></p>
+<p class="p2"><br></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"&gt;&lt;/script&gt;</font></p>
+<p class="p2"><br></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;style&gt;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>body{</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>margin:0;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>font-family:Arial,sans-serif;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>background:#f5f5f5;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>text-align:center;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>* {</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>}</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>h1{</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>margin:20px 0 10px;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>font-size:28px;</font></p>
+<p class="p2"><br></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>body {</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>margin: 0;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>background: #f5f5f5;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>text-align: center;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>}</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>p{</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>color:#555;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>margin-bottom:10px;</font></p>
+<p class="p2"><br></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>h1 {</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>margin: 20px 0 8px;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>font-size: 28px;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>color: #111;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>}</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>model-viewer{</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>width:100%;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>height:75vh;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>background:white;</font></p>
+<p class="p2"><br></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>p {</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>margin: 0 16px 12px;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>color: #555;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>font-size: 16px;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>}</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>#ar-button{</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>background:black;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>color:white;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>border:none;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>border-radius:10px;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>padding:12px 18px;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>font-size:16px;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>cursor:pointer;</font></p>
+<p class="p2"><br></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>model-viewer {</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>width: 100%;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>height: 78vh;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>background: #ffffff;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>}</font></p>
+<p class="p2"><br></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>#ar-button {</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>background: #111;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>color: #fff;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>border: none;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>border-radius: 10px;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>padding: 12px 18px;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>font-size: 16px;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>cursor: pointer;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>}</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1">&lt;/head&gt;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1">&lt;body&gt;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Mascot 3D&lt;/h1&gt;</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;p&gt;Bấm nút bên dưới để xem ngoài không gian thật&lt;/p&gt;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;p&gt;Bấm nút bên dưới để xem mascot ngoài không gian thật&lt;/p&gt;</font></p>
 <p class="p2"><br></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;model-viewer</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>src="mascot.glb"</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>src="./mascot.glb"</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>alt="Mascot 3D"</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>ar</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>ar-modes="webxr scene-viewer quick-look"</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>camera-controls</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>auto-rotate</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>autoplay</font></p>
-<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>shadow-intensity="1"&gt;</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>shadow-intensity="1"</font></p>
+<p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>exposure="1"&gt;</font></p>
 <p class="p2"><br></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>&lt;button slot="ar-button" id="ar-button"&gt;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">      </span>Xem AR</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">    </span>&lt;/button&gt;</font></p>
-<p class="p2"><br></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1"><span class="Apple-converted-space">  </span>&lt;/model-viewer&gt;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1">&lt;/body&gt;</font></p>
 <p class="p1"><font face="Helvetica" size="3" class="f1">&lt;/html&gt;</font></p>
